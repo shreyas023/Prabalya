@@ -12,8 +12,16 @@ body
 	margin: 0px 0px;
 }
 
+
 /*---------header---------*/
 
+.name a{
+	text-decoration: none;
+	color: #fff;	
+}
+.name a:hover{
+	color: #fff;
+}
 .nav{
 	display: inline-flex;
 	flex-basis: 25%;
@@ -44,8 +52,13 @@ body
 	list-style-type: none;
 	font-family: 'Arial Black';
 	font-size: 18px;
+	text-decoration: none;
 }
-.nav1 li:hover{
+.nav1 li a{
+	text-decoration: none;
+	color: #fff;
+}
+.nav1 li a:hover{
 	text-shadow: 2px 2px 2px #ed5858;
 
 }
@@ -175,10 +188,10 @@ body
 
 /*------------SPONSORS------*/
 
-.sponsors{
+#sponsors{
 	color: #c82b00;
 }
-.sponsors p{
+#sponsors p{
 	font-family: 'Arial Black';
 	font-size: 50px;
 	text-align: center;
