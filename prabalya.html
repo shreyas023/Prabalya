@@ -13,30 +13,82 @@
 </head>
 <body>
 	<div class="header">
+		<div class="container">
+			<div class="row" style="justify-content: space-between;">
+				<div class="nav">
+					<img src="images\logo.png" height="100px" width="90px">
+					<div class="name">
+					<p>PRABALYA</p>
+					</div>
+				</div>
+				<div class="nav1">
+					<ul>
+						<li>Home</li>
+						<li>Events</li>
+						<li>Sponsors</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		
+		<div class="row slideshow">
+
+			<div class="slide animation">
+			  
+			  <img src="images\Slideshow1.png">
+			  <div class="text">PRABALYA 2023</div>
+			</div>
+
+			<div class="slide animation">
+			 
+			  <img src="images\Slideshow2.jpeg">
+			  <div class="text">THE WAIT IS OVER</div>
+			</div>
+
+			<div class="slide animation">
+			 
+			  <img src="images\Slideshow3.jpg">
+			  <div class="text">ENROLL NOW!</div>
+			</div>
+
+			<div class="slide animation">
+			  
+			  <img src="images\Slideshow4.jpg">
+			  <div class="text">IT'S TIME TO PLAY</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="header" style="background-color:#ed5858;">
 
 
 		<div class="container">
-			<div class="row">
-				<div class="col hover" style="border: solid 0px white; margin: 5px; box-shadow: -5px 5px 10px whitesmoke;">
+			<div class="row" style="margin-top:20px;">
+				<div class="col hover">
 					<div class="vision">
-						<p style="font-size: 18px; text-align: center;">VISION</p>
-						<p>THE VISION OF THE SPORTS COMMITTEE IS TO ORGANIZE TRAINING,
+						<p style="font-size: 18px; text-align: center;margin-top: 25px;">VISION</p>
+						<p style="margin-top: 30px;">THE VISION OF THE SPORTS COMMITTEE IS TO ORGANIZE TRAINING,
 						COACHING AND EDUCATION IN SPORTS FOR EVERYBODY SO THAT
 						THEY CAN LEARN TO KEEP THEMSELVES PHYSICALLY FIT.</p>
 					</div>
 				</div>
-				<div class="col hover" style="border: solid 0px white; margin: 5px; box-shadow: 0px 5px 10px whitesmoke;">
+				<div class="col hover">
 					<div class="vision">
-						<p style="font-size: 18px; text-align: center;">MISSION</p>
+						<p style="font-size: 18px; text-align: center; margin: 20px 0px;">MISSION</p>
 						<p>THE COMMITTEE AIMS AT ENHANCING THE INTEREST OF THE PARTICIPANTS IN THE
 							FIELD OF SPORTS. TO ACHIEVE THE ABOVE, WE PLANNING TO ORGANIZE VARIOUS COMPETITIONS
 							IN THE FOLLOWING SPORTS : WALKATHON, FOOSE BALL, FOOTBALL, CRICKET,
 							BASKETBALL, VOLLEYBALL, TABLE TENNIS, CHESS, BADMINTON.</p>
 					</div>
 				</div>
-				<div class="col hover" style="border: solid 0px white; margin: 5px; box-shadow: 5px 5px 10px whitesmoke;">
+				<div class="col hover">
 					<div class="vision">
-						<p style="font-size: 18px;text-align: center;">OBJECTIVES</p>
+						<p style="font-size: 18px;text-align: center; margin-top: 10px;">OBJECTIVES</p>
 						<p>THE SPORTS COMMITTEE IS TO PROMOTE
 							EVERY INDIVIDUALS' HEALTH, PHYSICAL WELL-BEING AS WELL AS THE ACQUISITION
 							OF PHYSICAL SKILLS AMONG THE STUDENTS. THE COMMITTEE ASPIRES TO INCULCATE
@@ -47,14 +99,16 @@
 				</div>
 			</div>
 			
-			<hr style="margin: 30px 0px; padding:0px 5px;">
+			<hr style="margin: 30px 0px; padding:0px 5px; ">
 			
-
-			<div class="message">
+			<div class="row" style="margin-bottom: 20px;">
+				
+			
+			<div class="col message">
 					<div class="message1">
 						<img src="images\director.jpeg">
-						<div>Dr. Parthasarthi Mukherjee</div>
-						<div>Director, Nmims Navi Mumbai</div>
+						<div><strong>Dr. Parthasarthi Mukherjee</strong></div>
+						<div><strong>Director, Nmims Navi Mumbai</strong></div>
 					</div>
 					<div class="message2">
 						<div class="section">
@@ -70,11 +124,11 @@
 							Prabalya!"</p>
 					</div>
 			</div>
-			<div class="message">
-					<div class="message1">
+			<div class="col message">
+				<div class="message1">
 						<img src="images\chairperson.jpeg">
-						<div>Prof. Aditya S Kasar</div>
-						<div>Chairperson - Sports Committee, Nmims Navi Mumbai</div>
+						<div><strong>Prof. Aditya S Kasar</strong></div>
+						<div><strong>Chairperson - Sports Committee, Nmims Navi Mumbai</strong></div>	
 					</div>
 					<div class="message2">
 						<div class="section">
@@ -89,12 +143,12 @@
 						<p>"Winners never quit & Quitters never win"</p>
 					</div>
 			</div>
-			<div class="message">
+			<div class="col message ">
 					<div class="message1">
 						<img src="images\president.png">
-						<div>Manthan Tripathi</div>
-						<div>President - Sports Committee,
-								NMIMS Navi Mumbai</div>
+						<div><strong>Manthan Tripathi</strong></div>
+						<div><strong>President - Sports Committee,
+								NMIMS Navi Mumbai</strong></div>
 					</div>
 					<div class="message2">
 						<div class="section">
@@ -108,6 +162,8 @@
 						of member is the team."</p>
 					</div>
 			</div>
+		</div>
+		
 		</div>
 </div>
 
@@ -190,5 +246,36 @@
 			</div>
 		</div>
 	</div>
+
+
+
+	<!----------------script for slideshow---->
+
+	<script>
+		let index = 0;
+		SlideShow();
+
+		function SlideShow() {
+		  let i;
+		  let slides = document.getElementsByClassName("slide");
+
+		  for (i = 0; i < slides.length; i++) 
+		  {
+		    slides[i].style.display = "none";  
+		  }
+		  index++;
+
+		  if (index > slides.length) 
+		  	{
+		  		index = 1;
+		  	}    
+		  
+		  
+		  slides[index-1].style.display = "block"; 
+
+		  setTimeout(SlideShow, 2000); 
+		}
+	</script>
+
 </body>
 </html>

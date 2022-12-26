@@ -9,74 +9,167 @@ body
 .header{
 	background-color: #000;
 	padding: 10px 0px;
+	margin: 0px 0px;
 }
+
+/*---------header---------*/
+
+.nav{
+	display: inline-flex;
+	flex-basis: 25%;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav1{
+	flex-basis: 65%;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	justify-content: space-around;
+}
+.nav1 ul{
+	padding-right: 0px;
+	display: ;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	border: solid #ed5858 2px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px #ed5858;
+}
+.nav1 li{
+	padding: 2px 2px;
+	margin: 2px 50px;
+	display: inline-block;
+	list-style-type: none;
+	font-family: 'Arial Black';
+	font-size: 18px;
+}
+.nav1 li:hover{
+	text-shadow: 2px 2px 2px #ed5858;
+
+}
+
+/*--------slideshow----*/
+
+.slideshow{
+	position: relative;
+	margin: 0px 0px;
+	padding: 0px 0px;
+
+}
+.slide{
+	display: none;
+	padding: 0px 0px;
+	margin: 0px 0px;
+
+}
+.animation{
+	animation-name: fade;
+  	animation-duration: 1.5s;
+  	padding: 0px 0px;
+	margin: 0px 0px;
+}
+.slide img{
+	height: 675px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	max-width: 100%;
+}
+.text {
+	font-family: 'Arial Black';
+  font-size: 38px;
+  padding: 8px 12px;
+  position: absolute;
+  color: whitesmoke;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
 /*-------vision--------*/
 .vision{
 	color: #fff;
 	vertical-align: middle;	
 }
 .vision p{
-	font-family: arial black;
-	font-size: 12px;
+	font-family: 'Bahnschrift SemiBold';
+	font-size: 15px;
 	text-align: justify;
-
+	color: #c82b00;
 }
 .hover{
 	transition-duration: 0.5s;
 	vertical-align: middle;	
+	border: solid 0px white;
+	margin: 15px 5px; 
+	box-shadow: -1px 1px 10px black;
+	background-color: white;
+	border-radius: 10px;
+
 }
 .hover:hover{
-	background-color: #c82b00;
-	transform: translate3d(5px, -5px, 5px);
 
+	transform: translate3d(5px, -5px, 5px);
+	box-shadow: -5px 5px 10px black;
 }
 
 /*---------message----------*/
 
 .section{
 	display: flex;
+	justify-content: center;
 }
 .section p{
 	font-family:'Arial Black';
-	font-size: 28px; 
-	  
+	font-size: 20px; 
+	 
 	display: inline-block;
 	border: white 0px solid;
 }
-.section p:hover{
-	text-shadow: 0px 0px 10px #fff;
-}
+
 .message{
-	display: flex;
-	border: white 0px solid;
-	align-items: center;
-	padding: 5px;
+	border: solid 1px black;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 10px;
+	background-color:white; 
+	margin: 0px 5px;
 }
 .message1{
-	font-family: 'Arial Black';
+	font-family: 'Arial';
 	flex-basis: 20%;
 	text-align: center;
 	align-items: center;
 	padding: 5px;
+	color: #c82b00;
+	background-color: white;
 }
 .message1 img{
 	height: 242px;
 	width: 208px;
-	border: white 3px solid;
+	border: black 1px solid;
 	border-radius: 10px;
-	box-shadow: -2px -2px 10px #c82b00;
+	box-shadow: 0px 0px 10px black;
+	margin: 10px 0px;
 }
 .message1 img:hover{
-	box-shadow: -10px -10px 10px #c82b00;
+	box-shadow: -10px 10px 10px black;
+	transform: translate3d(5px, -5px, 5px);
 	transition-duration: 0.5s;
 }
 .message2{
-	font-family: 'Arial Black';
+	font-family: 'Bahnschrift SemiBold';
 	flex-basis: 80%;
-	padding: 5px 50px 5px 50px;
+	padding: 5px 5px 5px 5px;
 	text-align: justify;
-	font-size: 22px;
-
+	font-size: 18px;
+	color: black;
 }
 
 
