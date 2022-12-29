@@ -14,7 +14,7 @@
 <body>
 	<div class="header">
 		<div class="container">
-			<div class="row" style="justify-content: space-between;">
+			<div class="navigation" style="justify-content: space-between;">
 				<div class="nav">
 					<a href="index.html"><img src="images\logo.png"></a>
 					<div class="name">
@@ -24,10 +24,19 @@
 				<div class="nav1">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="">Events</a></li>
+						<li><a href="#">Events</a></li>
 						<li><a href="#sponsors">Sponsors</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
+				</div>
+				<div class="menu-btn">
+					<button id="menu">≡</button>
+					<div class="dropdown">
+						<a href="index.html">Home</a>
+						<a href="#">Events</a>
+						<a href="#sponsors">Sponsors</a>
+						<a href="#contact">Contact</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -39,7 +48,7 @@
 
 			<div class="slide animation">
 			  
-			  <img src="images\Slideshow1.png">
+			  <img src="images\Slideshow1.png" style="padding-right: 0px;">
 			  <div class="text">PRABALYA 2023</div>
 			</div>
 
@@ -275,6 +284,17 @@
 
 		  setTimeout(SlideShow, 2000); 
 		}
+
+		function DropDown() {
+		  var dropdownMenu = document.querySelector('.dropdown');
+		  dropdownMenu.style.display = (dropdownMenu.style.display === 'none') ? 'block' : 'none';
+		  var remove = document.querySelector('.nav');
+		  remove.style.display = (remove.style.display === 'flex') ? 'none' : 'flex';
+		}
+
+		var dropdownBtn = document.querySelector('#menu');
+		dropdownBtn.addEventListener('click', DropDown );
+
 	</script>
 
 </body>
