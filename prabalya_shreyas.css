@@ -499,6 +499,48 @@ a{
     -webkit-transform: rotate(-45deg);
 }
 
+@media(max-width:600px){
+	.slider-heading h3{
+		font-size: 21px;
+	}
+	.event-class{
+		width: 310px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.event-class img{
+		width: 160px;
+		height: 190px;
+		padding: 0px;
+	}
+	.event-class strong{
+		font-size: 21px;
+	}
+	.lSAction > a{
+		display: none;
+	}
+	.slider-heading{
+		padding: 0px;
+	}
+}
+
+@media(max-width:400px){
+	.event-class{
+		width: 280px;
+	}
+	.register-btn{
+		font-size: 0.8rem;
+	}
+}
+@media(max-width:324px){
+	.event-class{
+		width: 225px;
+	}
+	.event-class img{
+		width: 140px;
+		height: 165px;
+	}
+}
 
 
 
